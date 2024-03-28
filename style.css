@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+  }
+
+body{
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.5) 60%), url(./Resources/1.jpg);
+
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+  
+  .header {
+    color: rgb(255, 255, 255);
+    stroke: aqua;
+    stroke-width: 10px;
+    padding: 10px; 
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Center items vertically */
+  }
+  
+  /* Style for the icon */
+  .icon h2 {
+    margin: 0; 
+    text-transform: uppercase;
+  }
+  
+  .menu ul {
+    list-style-type: none; 
+    display: flex; 
+  }
+  
+  .menu li {
+    margin-right: 10px; 
+    position: relative;
+  }
+  
+  .menu li a {
+    color: #fff; 
+    text-decoration: none; 
+    padding: 5px 10px; 
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    background: #009688;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+
+  .menu ul li:hover::after{
+    width: 100%;
+  }
+
+
+ .body h2{
+    text-transform: capitalize;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .body p{
+    text-align: center;
+    padding: 40px;
+    flex: 1; 
+    padding-top: 10px;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: larger;
+    margin: 20px 30px;
+
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="text"],
+  input[type="submit"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 35%;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green color on hover */
+  }
+  
